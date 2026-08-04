@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<title>Meia-entrada estudantil</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a href="#" class="logo">
+        <img src="logo-meia-entrada.svg" alt="Meia-entrada.org.br" class="logo__img">
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="mainNav">
+        <div class="nav__item has-dropdown">
+          <button class="nav__link">Lei da Meia-entrada <i class="chev"></i></button>
+        </div>
+        <div class="nav__item has-dropdown">
+          <button class="nav__link nav__link--active">Validação <i class="chev"></i></button>
+        </div>
+        <div class="nav__item has-dropdown">
+          <button class="nav__link">Chaves públicas <i class="chev"></i></button>
+        </div>
+        <div class="nav__item">
+          <a href="#" class="nav__link">FAQ</a>
+        </div>
+        <div class="nav__item">
+          <a href="#" class="nav__link">Notícias</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main class="page">
+    <h1 class="page__title">
+      Validação de CIE <span class="page__title-sub">(Carteira de Identificação Estudantil)</span>
+    </h1>
+
+    <section class="card">
+
+      <div class="status status--valid" id="statusBanner">
+        <span id="statusText">Documento válido!</span>
+      </div>
+
+      <p class="attest" id="attestText">
+        UNE atesta que Clistian José Vieira de Melo é estudante e está regularmente
+        matriculado(a) em Analise e Desenvolvimento de Sistemas da instituição
+        Faculdade Senac
+      </p>
+
+      <div class="details">
+        <table class="details__table">
+          <tbody>
+            <tr>
+              <th>Nome:</th>
+              <td>Clistian José Vieira de Melo</td>
+            </tr>
+            <tr>
+              <th>Instituição:</th>
+              <td>Faculdade Senac</td>
+            </tr>
+            <tr>
+              <th>Curso:</th>
+              <td>Analise e Desenvolvimento de Sistemas</td>
+            </tr>
+            <tr>
+              <th>Documento de Identificação:</th>
+              <td>000000110069752</td>
+            </tr>
+            <tr>
+              <th>Emissor:</th>
+              <td>UNE</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="photo">
+          <div class="photo__placeholder" aria-label="Foto do(a) estudante">
+            <img src="foto-perfil.jpeg" alt="Foto do(a) estudante" class="photo__img">
+          </div>
+        </div>
+      </div>
+
+      <div class="cert">
+        <h2 class="cert__title">Certificado de Atributo em formato PEM:</h2>
+        <div class="cert__box" id="certBox"><span class="begin">-----BEGIN CERTIFICATE-----</span>
+MIID8zCCAtsCAQEwdqB0MG+kbTBrMQswCQYDVQQGEwJCUjETMBEGA1UECgwKSUNQ
+LUJyYXNpbDEmMCQGA1UECwwdVU5JQU8gTkFDSU9OQUwgRE9TIEVTVFVEQU5URVMx
+GRAPHfakeSAMPLEcertificatecontentONLYforlearningPURPOSESxampled
+Not1aREALcertificateJUSTplaceholderDATAforSTUDYINGhtmlANDcssXYZ
+QW1hZ2luZSBxdWUgZXNzZSDDqSBhcGVuYXMgdW0gZXhlbXBsbyBkZSBlc3R1ZG8=
+<span class="end">-----END CERTIFICATE-----</span></div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <h2 class="footer__brand">meiaentrada.org.br</h2>
+
+      <div class="footer__cols">
+        <ul class="footer__list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Lei da Meia-entrada</a></li>
+          <li><a href="#">Chaves públicas</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+        <ul class="footer__list">
+          <li><a href="#">Notícias</a></li>
+          <li><a href="#">Termos de Uso e Política de Privacidade</a></li>
+        </ul>
+      </div>
+
+      <p class="footer__copy">@Meiaentrada.org.br - Todos os Direitos Reservados <span id="year"></span></p>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
